@@ -44,10 +44,15 @@ document.getElementById("closeButton").addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var encodedText = '&#68;&#101;&#115;&#105;&#103;&#110;&#32;&#98;&#121;&#32;&#80;&#97;&#110;&#98;&#97;&#112;';
+  // Chuỗi đã mã hóa cho "Design by Minnhi"
+  var encodedText = '&#68;&#101;&#115;&#105;&#103;&#110;&#32;&#98;&#121;&#32;&#109;&#105;&#110;&#110;&#104;&#105;';
+
+  // Tạo phần tử footer
   var footer = document.createElement("a");
-  footer.innerHTML = encodedText;
-  document.body.appendChild(footer); 
+  footer.innerHTML = encodedText; // Chèn nội dung mã hóa vào
+
+  // Gắn phần tử vào cuối tài liệu
+  document.body.appendChild(footer);
 });
 const treeIcon = document.querySelector(".tree-icon");
 

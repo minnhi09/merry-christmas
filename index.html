@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./ruby.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❄Giáng Sinh❄</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="as" class="christmas-message">Merry Christmas</div>
+    <div class="tree-container">
+        <img src="https://github.com/Panbap/datapanbap/blob/main/image/big_tree.png?raw=true" alt="Cây thông"
+            class="tree-icon">
+    </div>
+
+    <div class="container">
+        <button id="showButton">☃️Letter to you☃️</button>
+
+        <audio id="audioPlayer" src="./music/chitmet.mp3" loop></audio>
+
+        <script>
+            document.getElementById("showButton").addEventListener("click", function () {
+                var audio = document.getElementById("audioPlayer");
+                audio.volume = 0.1; // Điều chỉnh âm lượng xuống 40%
+                audio.play();
+            });
+        </script>
+    </div>
+
+    <div id="guideInfo" class="hidden">
+        <button id="closeButton" class="close-btn">X</button>
+        <div id="ax" class="card">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="./merry.png">
+            </div>
+            <div class="details">
+                <h4 class="color2 margin">(MERRY CHRISTMAS)</h4>
+                <p>Dear: </p>
+                <p>Trịnh Mai Anh (aka bạn cùng bàn)</p>
+                <p>Me ry cờ rít mớt !!</p>
+                <p>Noen vui vẻ nhóa ,chúc cu một</p>
+                <p>mùa giáng xinh an lành. thêm xinh</p>
+                <p>gái học giỏi,... mọi điều tốt đẹp </p>
+                <p>nhất sẽ tới nhé. Cũng cảm ơn bồ</p>
+                <p>thời gian qua đã ở bên dù có vui</p>
+                <p>có buồn cảm xúc cũng bủl lmao đấy</p>
+                <p>chứ,vinh hạnh nhắm mới chơi</p>
+                <p>dc với nhau ha. Sao ta chẳng biết</p>
+                <p>nói j hơn cố gắng lên nhé tym tym</p>
+                <br>
+                <p class="text-right">kí tên!</p>
+                <p class="text-right">♥thatsyteng♥</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
